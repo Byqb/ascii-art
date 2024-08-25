@@ -20,7 +20,7 @@ Instructions
 Banner Format
 -Each character has an height of 8 lines.
 -Characters are separated by a new line \n.
-    
+ ```   
 student@ubuntu:~/ascii-art$ go build
 student@ubuntu:~/ascii-art$ ./ascii-art "hello"
   _              _   _          
@@ -30,9 +30,13 @@ student@ubuntu:~/ascii-art$ ./ascii-art "hello"
  | | | | |  __/ | | | | | (_) | 
  |_| |_|  \___| |_| |_|  \___/  
                                 
+```
+
 
 # Ascii-Art FS
 You must follow the same instructions as in the first subject but the second argument must be the name of the template.
+
+```
 student@ubuntu:~/ascii-art$ go build
 student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard
   _                _    _           
@@ -62,9 +66,12 @@ o  o o-o o o o-o         o   o  o o-o o   o-o
                                               O 
                                                 
 student@ubuntu:~/ascii-art$
+```
+
 
 # Ascii-art Output
 You must follow the same instructions as in the first subject while writing the result into a file.
+```
 The file must be named by using the flag --output=<fileName.txt>, in which --output is the flag and <fileName.txt> is the file name.
 student@ubuntu:~/ascii-art$ go build
 student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard --output=banner.txt
@@ -76,7 +83,7 @@ _              _   _
 | | | | |  __/ | | | | | (_) | 
 |_| |_|  \___| |_| |_|  \___/  
 
-                               
+  ```                             
 # Ascii-Art Justify
 You must follow the same instructions as in the first subject but the representation should be formatted using a flag --align=<type>, in which type can be :
     center
@@ -84,6 +91,8 @@ You must follow the same instructions as in the first subject but the representa
     right
     justify
     You must adapt your representation to the terminal size. If you reduce the terminal window the graphical representation should be adapted to the terminal size.
+
+```
 |student@ubuntu:~/ascii-art$ go build                                                                                       |
 |student@ubuntu:~/ascii-art$ ./ascii-art "hello" standard --align=center                                                    |
 |                                             _                _    _                                                       |
@@ -123,7 +132,7 @@ You must follow the same instructions as in the first subject but the representa
 |                                                                                                  _|_|                     |
 |student@ubuntu:~/ascii-art$   
 
-
+```
 # Ascii-Art Color
 You must follow the same instructions as in the first subject but with colors.
 -The output should manipulate colors using the flag --color=<color>, in which --color is the flag and <color> is the color name of choice (ex: orange, green, blue).
